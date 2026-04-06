@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MD Slide</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#1d1d1f">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -14,6 +18,15 @@
     }
     h1 { font-size: 2rem; margin-bottom: .5rem; }
     p { font-size: 1rem; margin-bottom: 1.5rem; color: #6e6e73; }
+    .brand {
+      display: flex; flex-direction: column; align-items: center; gap: 1rem;
+      margin-bottom: 2.25rem;
+    }
+    .brand-icon {
+      width: 96px; height: 96px; border-radius: 22px;
+      box-shadow: 0 18px 40px rgba(29, 29, 31, 0.14);
+    }
+    .brand-copy p { margin-bottom: 0; }
     .links { margin-top: 2rem; }
     .links a {
       display: inline-block; margin: .5rem 1rem;
@@ -25,8 +38,13 @@
   </style>
 </head>
 <body>
-  <h1>MD Slide</h1>
-  <p>Marp Markdown スライドエディタ for iOS / iPadOS</p>
+  <header class="brand">
+    <img class="brand-icon" src="assets/icon-192.png" alt="MD Slide app icon" width="96" height="96">
+    <div class="brand-copy">
+      <h1>MD Slide</h1>
+      <p>Marp Markdown スライドエディタ for iOS / iPadOS</p>
+    </div>
+  </header>
 
   <div class="links">
     <h2 style="font-size: 1.2rem; margin-bottom: 1rem;">プライバシーポリシー / Privacy Policy</h2>

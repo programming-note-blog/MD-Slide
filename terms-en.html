@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms of Use — MD Slide</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#1d1d1f">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -19,13 +23,29 @@
     a:hover { text-decoration: underline; }
     .meta { color: #6e6e73; font-size: .9rem; margin-bottom: 2rem; }
     .lang-switch { text-align: right; margin-bottom: 1rem; font-size: .9rem; }
+    .page-header {
+      display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;
+    }
+    .page-brand-icon {
+      width: 72px; height: 72px; border-radius: 18px; flex-shrink: 0;
+      box-shadow: 0 12px 32px rgba(29, 29, 31, 0.12);
+    }
+    .page-title-group .meta { margin-bottom: 0; }
+    @media (max-width: 520px) {
+      .page-header { flex-direction: column; align-items: flex-start; }
+    }
   </style>
 </head>
 <body>
   <div class="lang-switch"><a href="terms.html">日本語</a></div>
 
-  <h1>Terms of Use</h1>
-  <p class="meta">App: MD Slide ｜ Last updated: April 1, 2026</p>
+  <header class="page-header">
+    <img class="page-brand-icon" src="assets/icon-192.png" alt="MD Slide app icon" width="72" height="72">
+    <div class="page-title-group">
+      <h1>Terms of Use</h1>
+      <p class="meta">App: MD Slide ｜ Last updated: April 1, 2026</p>
+    </div>
+  </header>
 
   <p>These Terms of Use ("Terms") set forth the conditions for using the MD Slide application ("the App") provided by programming-note-blog ("the Developer"). By downloading or using the App, you agree to be bound by these Terms.</p>
 
